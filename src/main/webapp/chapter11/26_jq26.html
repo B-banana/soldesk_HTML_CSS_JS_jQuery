@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../style/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function() {
+		
+		let data;
+		$("#detachBtn").click(function() {
+			data = $(".content").detach();
+		});
+		
+		$("#restoreBtn").click(function() {
+			$("#container").append(data);
+		});
+	});
+</script>
+
+</head>
+<body>
+
+	<h1>.remove() 메소드</h1>
+	<div id="container">
+		<div>첫번째 컨텐트</div>
+		<div class="content second">두번째 컨텐트</div>
+		<div class="content third">세번째 컨텐트</div>
+	</div>
+
+	<button id="detachBtn">상품 취소</button>
+	<button id="restoreBtn">상품 복구</button>
+
+</body>
+</html>

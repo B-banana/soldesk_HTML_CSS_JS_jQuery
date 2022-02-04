@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../style/jquery-3.6.0.min.js"></script>
+<script>
+	$(function() {
+		$("#getter").on("click", function(){
+			let size = "너비는" + $("#box").width() + "px이고, 높이는 " + $("#box").height() + "px로 입니다<br/>";
+			$("#text").html(size);
+		});
+		
+		$("#setter").on("click", function(){
+			let w = $("#box").width();
+			let h = $("#box").height();
+			$("#box").width(w/2).height(h/2);
+			
+			let size = "너비는" + $("#box").width() + "px이고, 높이는 " + $("#box").height() + "px로 변경<br/>";
+			$("#text").html(size);
+		}); 
+			
+		});
+
+</script>
+</head>
+<body>
+	<h1>.width() 메소드와 .height() 메소드</h1>
+	<p>아래의 버튼을 누르면 다음 div 요소의 크기를 읽어오거나 설정할 수 있어요!!</p>
+	<button id="getter">크기 읽어오기!</button>
+	<button id="setter">크기 줄이기!</button>
+
+	<div id="box"
+		style="width: 400px; height: 200px; background-color: yellow"></div>
+
+	<p id="text"></p>
+
+</body>
+</html>

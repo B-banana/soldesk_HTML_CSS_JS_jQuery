@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../style/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function() {
+
+
+		$("#slide").click(function() {
+			$("#panel").css("slow", "red").slideDown(3000).slideUp(5000).fadeTo("slow", 0.3);	
+		});
+
+	});
+</script>
+<style>
+#slide, #panel {
+	padding: 5px;
+	text-align: center;
+	background-color: #e5eecc;
+	border: 1px solid #c3c3c3;
+}
+
+#panel {
+	padding: 70px;
+	display: none;
+	background-color: #ffff00;
+	font-size: 20px;
+}
+</style>
+
+</head>
+<body>
+
+	<div id="slide">[오늘의 공지]</div>
+	<div id="panel">
+		오늘은 1월 21일(금요일) 공지<br>불금하세요.<br>1월 24일 : 정보처리 3과목 특강<br>24일
+		태한님이 치킨을 쏩니다.
+	</div>
+
+</body>
+</html>

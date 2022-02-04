@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../style/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("button").click(function() {
+			$("<b>겨울 80% 세일</b>").prependTo(".item");
+		});
+	});
+</script>
+
+</head>
+<body>
+
+	<h1>.appendTo() 메소드</h1>
+	<ul>
+		<li class="item">상의</li>
+		<li class="item">하의</li>
+		<li class="item">아우터</li>
+	</ul>
+	<button>상품추가</button>
+<!-- 	<button id="secondBtn">하의 상품추가</button>
+	<button id="thirdBtn">아우터 상품추가</button> -->
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../style/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	alert("상단");
+</script>
+</head>
+<body>
+
+	<h1>Hello World</h1>
+	<h2>Hello World</h2>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			alert("중단");
+		});	//JQ는 스크립트 다 읽은 후 실행됨. 쿼리는 바디를 활용해서 돌아가는 라이브러리이기 떄문에 바디가 다 읽힌 후 작동함
+	</script>
+	<h3>Hello World</h3>
+	<h4>Hello World</h4>
+
+	<script type="text/javascript">
+		alert("하단");
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Video Tag</title>
+</head>
+<body>
+<h3>비디오 자동 재생</h3>
+<video src="bear.mp4" controls loop autoplay width="300" height="250"></video>
+<h3>비디오 수동 재생</h3>
+<video src="bear.mp4" controls width="300" height="250"></video>
+<h3>비디오 다중 재생 - 파일연결</h3>
+<video controls autoplay width="300" height="250"> <!-- autoplay 들어가야 함 -->
+<source src="small.mp3" type="video/mpeg">	<!-- 익스플로러, 크롬, 파이어폭스, 사파리 모두 가능 -->
+<source src="small.ogv" type="video/ogg">	<!-- 크롬, 파이어폭스 가능 -->
+<source src="small.webm" type="video/webm">	<!-- 크롬, 파이어폭스 가능 -->
+비디오 파일을 재생 할 수 없습니다.	<!-- 재생이 불가능 할 때, 위에서부터 순차적으로 실행(if문) -->
+</video>
+<h3>비디오 다중 재생 - 웹연결</h3>
+<video controls autoplay width="300" height="250" preload="auto" poster="wait.jpg">
+<source src="https://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4; codecs="avc1.42E01E,mp4a.40.2"'>
+<source src="http://media.w3.org/2010/05/sintel/trailer.ogv" type='video/ogg; codecs="theora, vorbis"'>
+비디오 파일을 재생 할 수 없습니다.
+</video>
+</body>
+</html>

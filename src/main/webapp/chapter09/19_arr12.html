@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const ndata1 = [19, 36, 67, 26, 55, 24, 53, 12, 31];
+		const ndata2 = [191, 1236, 667, 6, 515, 24, 533, 2, 31231];
+		
+		const edata = ["Apple", "HTML", "Game", "Computer", "Java"];
+		const kdata = ["서울", "부산", "구리", "대구", "인천"];
+
+		document.write("수치 정렬1 : " + ndata1.sort() + "<p/>");	// 전부 두자리 정렬 ok
+		document.write("수치 정렬2-1 : " + ndata2.sort() + "<p/>");	// 자리수가 다를경우 안됨.
+		document.write("수치 정렬2-2 : " + ndata2.sort(function(a,b) {return a-b;}) + "<p/>");	// 내장된 선택함수. a-b 오름차순.
+		document.write("수치 정렬2-3 : " + ndata2.sort(function(a,b) {return b-a;}) + "<p/>");	// 내장된 선택함수. b-a 내림차순.
+		
+		document.write("영문 정렬1 : " + edata.sort() + "<p/>");	//정렬 ok, 단 앞자리가 대소문자 섞이면 주의
+		document.write("한글 정렬1 : " + kdata.sort() + "<p/>");	
+	</script>
+</body>
+</html>
+
+<!-- 영문의 경우 대소문자가 혼용되어 있으면 대문자가 먼저 정렬된다. 그러므로 먼저 정렬후(toLowerCase()) 사용하여 정렬
+숫자는 자릿수가 다를경우 오름차순 또는 내림차순으로 정렬 후 사용
+오름차순 : .sort(function(a,b) {return a-b;}
+내림차순 : .sort(function(a,b) {return b-a;}
+ -->

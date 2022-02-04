@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const kdata = [ "서울", "부산", "구리", "대구", "인천", "대전"];
+		const str1 = kdata.splice(1, 2);
+		document.write("삭제된 데이터 : " + str1 + "<p/>");
+		document.write("삭제 후 남은 데이터 : " + kdata + "<p/>");
+
+		const str2 = kdata.splice(1, 1, '강릉', '세종');	
+		document.write("삭제된 데이터 : " + str2 + "<p/>");
+		document.write("삭제 후 남은 데이터 : " + kdata + "<p/>");
+		
+		const str3 = kdata.splice(2, Number.MAX_VALUE);	
+		document.write("삭제된 데이터 : " + str3 + "<p/>");
+		document.write("삭제 후 남은 데이터 : " + kdata + "<p/>");
+	
+	</script>
+</body>
+</html>
+
+<!-- splice : 배열 데이터 추가 또는 부분 제거 -->

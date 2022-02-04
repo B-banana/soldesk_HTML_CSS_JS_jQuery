@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript</title>
+<script type="text/javascript">
+	var num = 0; /* 변수방 선언	*/
+	document.write("head 태그 내 실행 순서 : " + num + "<br/>")
+</script>
+<script type="text/javascript">
+	var num = 1; /* 변수방 선언	*/
+	document.write("head 태그 내 실행 순서 : " + num + "<br/>")
+</script>
+</head>
+<body>
+	<script type="text/javascript">
+		var num = 2; /* 변수방 선언	*/
+		document.write("head 태그 내 실행 순서 : " + num + "<br/>")
+	</script>
+	<script type="text/javascript">
+		var num = 3; /* 변수방 선언	*/
+		document.write("head 태그 내 실행 순서 : " + num + "<br/>")
+	</script>
+</body>
+</html>

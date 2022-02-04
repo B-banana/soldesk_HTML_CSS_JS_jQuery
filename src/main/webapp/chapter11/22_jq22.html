@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../style/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#firstBtn").click(function() {
+			$("#firstItem").appendTo("#list");	/* id가 firstBtn인 요소 추가 */
+		});
+		
+		$("#secondBtn").click(function() {
+			$("#secondItem").appendTo("#list");	/* id가 firstBtn인 요소 추가 */
+		});
+		
+		$("#thirdBtn").click(function() {
+			$("#thirdItem").appendTo("#list");	/* id가 firstBtn인 요소 추가 */
+		});
+
+	});
+</script>
+
+</head>
+<body>
+
+	<h1>.appendTo() 메소드</h1>
+	<ul id="list">
+		<li id="firstItem">상의</li>
+		<li id="secondItem">하의</li>
+		<li id="thirdItem">아우터</li>
+	</ul>
+	<button id="firstBtn">상의 상품추가</button>
+	<button id="secondBtn">하의 상품추가</button>
+	<button id="thirdBtn">아우터 상품추가</button>
+
+</body>
+</html>

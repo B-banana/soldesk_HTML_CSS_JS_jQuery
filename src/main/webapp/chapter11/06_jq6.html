@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../style/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("button.hide").click(function() {
+			$("p").hide();
+		});
+		$("button.show").click(function() {
+			$("p").show();
+		});
+	});
+</script>
+</head>
+<body>
+	<p>문서 준비 이벤트에는 여러 다중 이벤트 구현도 가능하다</p>
+	<p>버튼을 누르면 이벤트가 실행됩니다</p>
+	<button type="button" class="hide">메세지 삭제</button>
+	<button class="show">메세지 출력</button>
+</body>
+</html>

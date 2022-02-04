@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		function add() {
+			const img = document.createElement('img');
+			/* img.src = 'speaker.jpg';
+			img.width = 100;
+			img.height = 125; */
+			
+			img.setAttribute('src', 'speaker.jpg');
+			img.setAttribute('width', 100);
+			img.setAttribute('height',  125);
+			document.body.appendChild(img);
+		}
+	</script>
+	
+	<a href="#" onclick="add()">[이미지 추가]</a>
+
+</body>
+</html>

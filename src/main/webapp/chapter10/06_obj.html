@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>[Hong's Car]</p>
+	<p id="carname"></p>
+	<p id="carcolor"></p>
+	<p id="carspeed"></p>
+	
+	<p>[kim's Car]</p>
+	<p id="carname2"></p>
+	<p id="carcolor2"></p>
+	<p id="carspeed2"></p>
+
+	<script type="text/javascript">
+		function Car(name, color, speed) {
+			this.name = name;
+			this.color = color;
+			this.speed = speed;
+			this.speedup = function() {
+				return this.speed + 10;
+			}
+			this.speeddown = function() {
+				return this.speed - 10;
+			}
+		}
+
+		const HongCar = new Car('Sonata', 'white', 100);
+		const cname = document.getElementById("carname");
+		cname.textContent = '차량명 : ' + HongCar.name;
+		const ccolor = document.getElementById("carcolor");
+		ccolor.textContent = '차량색상 : ' + HongCar.color;
+		const cspeed = document.getElementById("carspeed");
+		cspeed.textContent = '차량속도 : ' + HongCar.speedup();
+		
+		const KimCar = new Car('Grandeur', 'black', 150);
+		const cname2 = document.getElementById("carname2");
+		cname2.textContent = '차량명 : ' + KimCar.name;
+		const ccolor2 = document.getElementById("carcolor2");
+		ccolor2.textContent = '차량색상 : ' + KimCar.color;
+		const cspeed2 = document.getElementById("carspeed2");
+		cspeed2.textContent = '차량속도 : ' + KimCar.speeddown();
+			
+	</script>
+
+
+</body>
+</html>

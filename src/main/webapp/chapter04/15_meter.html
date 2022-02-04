@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Meter & Progress Input</title>
+</head>
+<body>
+<form action="">
+<h3>학습량 그래프</h3>  
+홍민성 : <meter min="0" max="100" optimum="50" value="60">60 out of 100</meter>
+송지효 : <meter low="0.3" high="0.5" value="0.4">40%</meter>
+아무개 : <meter low="0.25" high="0.75" optimum="0.8" value="0.2">20%</meter>
+<!-- 
+meter 태그 : 지정된 값을 표현하기 위해 사용
+progress 태그 : 다운로드 상태 표시 같이 현재 진행율이 어떻게 되고 있는지를 나타낼때 사용
+min, max : 단순 최소 최대값, 데이터가 인식하는 최소값과 최댓값 (기본 0 ~ 1)
+optimum : 목표량, 원하는 기댓값
+value : 실제로 측정한 데이터 값
+low, high : 허용 범위, 허용되는 범위의 최소값과 최대값 항상 min, max값 범위 내에 있어야 함
+ -->
+ <p>
+ </p>
+ <h3>작업률 그래프</h3>
+ 초기작업 : <progress value="22" max="100" title="진행율">22%</progress><br>
+ 중간작업 : <progress value="0.77" max="1">77%</progress><br>
+ 다음작업 : <progress value="0.98" max="1">98%</progress><br>
+
+</form>
+</body>
+</html>

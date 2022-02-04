@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>[Car1]</p>
+	<p id="data10"></p>
+	<p id="data20"></p>
+	<p id="data30"></p>
+	<p>[Car2]</p>
+	<p id="data11"></p>
+	<p id="data21"></p>
+	<p id="data31"></p>
+	<p>[Car3]</p>
+	<p id="data12"></p>
+	<p id="data22"></p>
+	<p id="data32"></p>
+
+	<script type="text/javascript">
+		const car = [ {
+			name : 'Sonata',
+			color : 'white',
+			speed : 100
+		}, {
+			name : 'Jeep',
+			color : 'blue',
+			speed : 70
+		}, {
+			name : 'Audi',
+			color : 'red',
+			speed : 90			
+		}
+		]
+		
+		for (let i = 0; i < 3; i++) {
+			let cname = document.getElementById("data1" + i);
+			cname.textContent = '차량명 : ' + car[i].name;
+			let cspeed = document.getElementById("data2" + i);
+			cspeed.textContent = '차량 색상 : ' + car[i].color;
+			let colname = document.getElementById("data3" + i);
+			colname.textContent = '차량 속도 : ' + car[i].speed;	
+		}
+
+	</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var arrdata = [];
+
+		function insertArr() {
+			var i;
+			for (i = 0; i <= 99; i++) {
+				arrdata[i] = i + 1; //1~100까지의 데이터의 생성
+				document.write(arrdata[i] + " "); // 출력
+			}
+			document.write("<p>배열 크기 : " + arrdata.length + "</p>")
+			document.write("===============================<p/>")
+		}
+		
+		function delDataArr() {
+			var i;
+			for (i = 0; i < arrdata.length; i++) {
+					arrdata[i] = 0;
+			}
+			selectArr();
+		}
+		
+		function allDelArr() {
+			arrdata.length = 0;	//배열 초기화
+			selectArr();
+		}
+
+		function selectArr() {
+			var i;
+			for (i = 0; i < arrdata.length; i++) { //데이터 조회
+				document.write(arrdata[i] + " "); // 출력
+			}
+			document.write("<p>배열의 크기 : " + arrdata.length + "<p>");
+			document.write("<a href = '16_arr9.html'>돌아가기</a>");
+
+		}
+		
+		insertArr();
+
+	</script>
+	
+	<button type="button" onclick="delDataArr()">데이터 초기화</button>
+	<button type="button" onclick="allDelArr()">데이터 전체 삭제</button>
+	
+</body>
+</html>

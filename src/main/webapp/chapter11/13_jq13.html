@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../style/jquery-3.6.0.min.js"></script>
+<script>
+	$(function() {
+		$("button").on("click", function() {
+			const imgsrc = $("img").attr("src");	//속성값을 읽어오기
+			$("img").attr("src", "../img/3birthday.png");	//속성값을 새로운 값으로 변경하기
+		});
+	});
+</script>
+</head>
+<body>
+	<h1>.attr() 메소드</h1>
+	<p>예쁜 설이의 이미지가 변경됩니다</p>
+	<button>생파사진</button>
+	<br />
+	<img src="../img/3birthday02.jpg"
+		style="width: 320px; border: 1px solid black" />
+</body>
+</html>

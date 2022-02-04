@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Matrix Style</title>
+<style>
+div {
+	width: 100px;
+	height: 100px;
+	border: 1px dotted black;
+	background-color: skyblue;
+	margin: 50px;
+}
+
+div#box1 {
+	transform: matrix(1, 0, 0, 1, 100, 0);
+}
+
+div#box2 {
+	transform: matrix(1, 1, -1, 1, 50, 50);
+}
+
+div#box3 {
+	transform: matrix(1, 0, 1, 1, 50, 100);
+}
+
+div#box4 {
+	transform: matrix(1, 2, 2, 1, 50, 150);
+}
+
+</style>
+
+</head>
+<body>
+	<div>기본 박스</div>
+	<div id="box1">박스 1</div>
+	<div id="box2">박스 2</div>
+	<div id="box3">박스 3</div>
+	<div id="box4">박스 4</div>
+</body>
+</html>
+
+<!-- matrix() : 6개의 매개변수(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() -->

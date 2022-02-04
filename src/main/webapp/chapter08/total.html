@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var num;
+		var gender;
+		var count = 1;
+		
+		console.log(num);
+		outloop: while (1) {
+			num = prompt('숫자를 입력하세요');
+			//gender = prompt('성별을 입력하세요(남/여/기타)');
+			if (num != 10) {
+				if (num >= 8 && num <= 12) {
+					alert('정답에 가깝습니다.');
+				} else if (num < 8) {
+					alert('정답보다 작습니다.');
+				} else if (num > 12) {
+					alert('정답보다 큽니다.');
+				}
+			} else {
+				alert('정답입니다.');
+			}
+
+			gender = prompt('성별을 입력하세요(남/여/기타)');
+
+			switch (gender) {
+			case "남":
+				alert('남자입니다.');
+				break;
+			case "여":
+				alert('여자입니다.');
+				break;
+			case "기타":
+				alert('기타입니다.');
+				break;
+			default:
+				alert('잘못된 입력입니다.');
+				break;
+			}
+			
+			count++;
+			if (count == 10)
+				break;
+		}
+	</script>
+
+</body>
+</html>

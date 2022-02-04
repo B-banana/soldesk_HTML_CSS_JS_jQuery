@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		n_2 = 1;
+		n_1 = 1;
+
+		console.log(n_2);
+		console.log(n_1);
+		
+		let i = 0;
+		while (i < 100) {
+			let n = n_2 + n_1;
+			console.log(n);
+			n_2 = n_1;
+			n_1 = n;
+			i++;
+		}
+		
+	</script>
+</body>
+</html>

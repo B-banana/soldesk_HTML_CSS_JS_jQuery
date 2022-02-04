@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p id="upspeed"></p>
+	<p id="downspeed"></p>
+
+	<script type="text/javascript">
+		const car = {
+			name : 'Sonata',
+			speed : 40,
+			color : 'white',
+			speedup : function() {
+				return this.speed + 10;
+			},
+			speeddown : function() {
+				const low = this.speed - 10;
+				return low;
+			}
+		};
+		
+		const upspeed = document.getElementById("upspeed");	
+		upspeed.textContent = '속도 증가 : ' + car.speedup();
+		const downspeed = document.getElementById("downspeed");	
+		downspeed.textContent = '속도 감소 : ' + car.speeddown();
+
+	</script>
+
+</body>
+</html>
+
+<!-- textContent : 웹문서 안에서 아이디를 찾아서 변수방에 부여하고 변수의 내용을 출력까지 해줌 -->

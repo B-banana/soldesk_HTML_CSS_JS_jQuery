@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>내부/외부 style</title>
+
+<style>
+	p {color: blue;}
+	p {color: yellow;}
+	p {color: red;}
+	/* 내부 스타일 여러개 있다면 제일 마지막에 선언한것이 적용 */
+</style>
+<link type="text/css" rel="stylesheet" href="02_css_override.css" />
+
+<!-- 외부가 아래에 있다면, 내부 적요이 안되고 외부가 전부 적용되니, 유지보수나 작성용이를 위해
+01번 예제처럼 외부는 스타일 위에 배치할 것 -->
+
+</head>
+<body>
+	<p>CSS가 중복 정의된 경우 어떤 style이 적용될것인가?</p>
+	<p>외부 스타일 시트를 내부 스타일 시트 위에 적용해야 외부가 내부를 포함하여 둘다 적용된다</p>
+
+</body>
+</html>

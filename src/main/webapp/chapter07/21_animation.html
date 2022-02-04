@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Animation</title>
+<!-- 박사의 움직임이 5초동안 일정한 속도로 무한 반복하며 양방향으로 움직임 -->
+<style>
+div {
+	width: 100px;
+	height: 100px;
+	background: red;
+	position: relative;
+	animation: boxmove 5s linear infinite alternate;
+}
+
+@keyframes boxmove {
+	from {left: 0px;
+}
+
+to {
+	left: 300px;
+}
+}
+</style>
+</head>
+<body>
+	<div>애니메이션 박스</div>
+	<strong>Animation</strong>
+</body>
+</html>
+
+<!-- animation 속성은 애니메이션 속성을 설정합니다.
+animation-delay 속성은 애니메이션 지연 시간을 설정합니다.
+animation-direction 속성은 애니메이션 움직임 방향을 설정합니다.
+animation-duration 속성은 애니메이션 움직임 시간을 설정합니다.
+animation-fill-mode 속성은 애니메이션이 끝난 후의 상태를 설정합니다.
+animation-iteration-count 속성은 애니메이션 반복 횟수 설정합니다.
+animation-name 속성은 애니메이션 keyframes 이름을 설정합니다.
+animation-play-state 속성은 애니메이션 진행상태를 설정합니다.
+animation-timing-function 속성은 애니메이션 움직임의 속도를 설정합니다. -->
+

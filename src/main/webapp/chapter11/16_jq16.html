@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../style/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("button").click(function() {
+			$("h1, h2, p, div").toggleClass("red");
+		});
+	});
+</script>
+
+<style>
+.red {
+	color: red;
+	border: 1px solid blue;
+}
+</style>
+</head>
+<body>
+	<h1>HTML</h1>
+	<h2>CSS</h2>
+	<p>Javascript</p>
+	<div>Jquery</div>
+	<p></p>
+	<button>CSS적용/해제</button>
+</body>
+</html>

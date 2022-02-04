@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<p id="car"></p>
+
+	<p>[Car1의 속성]</p>
+	<p id="car0"></p>
+
+	<p>[Car2의 속성]</p>
+	<p id="car1"></p>
+
+	<p>[Car3의 속성]</p>
+	<p id="car2"></p>
+
+	<script type="text/javascript">
+		const car = Array([ 'Sonata', 100, 'white' ],
+				['Jeep', 70, 'blue'],
+				['Audi', 90, 'red']
+		);
+		
+	/* 	let cname = document.getElementById("car");
+		cname.textContent = "car[2][0] : " + car[2][0]; */
+		
+		for (let i = 0; i < 3; i++) {
+			let cname = document.getElementById("car" + [i]);
+			cname.textContent = "car name : " + car[i][0];
+			//cname.textContent = car[i]; //행단위 출력
+		}
+		
+
+	
+
+/* 		for (let i = 0; i < 3; i++) {
+			let cname = document.getElementById("data1" + i);
+			cname.textContent = '차량명 : ' + car[i].name;
+			let cspeed = document.getElementById("data2" + i);
+			cspeed.textContent = '차량 색상 : ' + car[i].color;
+			let colname = document.getElementById("data3" + i);
+			colname.textContent = '차량 속도 : ' + car[i].speed; */
+		
+	</script>
+
+
+
+</body>
+</html>

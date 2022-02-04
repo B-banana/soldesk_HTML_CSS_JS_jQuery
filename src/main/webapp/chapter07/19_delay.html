@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+div {
+	margin: 50px;
+	width: 100px;
+	height: 100px;
+	background: yellow;
+	border: 1px solid red;
+	transition-property: width, height, transform;
+	transition-delay: 3s;
+	transition-duration: 5s;
+	
+}
+
+div:hover {
+	width: 200px;
+	height: 200px;
+	transform: rotate(180deg);
+}
+</style>
+</head>
+<body>
+	<div>마우스를 올리면 3초 후에 박스가 180도 회전(5초)</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../style/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("button").click(function() {
+			$("#list").prepend("<li>신상품</li>");
+		});
+
+	});
+</script>
+
+</head>
+<body>
+
+	<h1>.prepend() 메소드</h1>
+	<ul id="list">
+		<li>상의</li>
+		<li>하의</li>
+		<li>아우터</li>
+	</ul>
+	<button>상품추가</button>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+function getGrade(){
+	var kor = 95;	//지역변수
+	document.write("함수지역안에서의 국어점수 : " + kor + "<br>")
+}
+
+var kor = 100; //전역변수
+
+getGrade();
+document.write("국어점수 : " + kor + "<br>");
+
+</script>
+</body>
+</html>

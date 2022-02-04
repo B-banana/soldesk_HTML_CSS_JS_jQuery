@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var result;
+	
+		function add(name, n) {
+			document.write(name + " 학생이 1부터 " + n + "까지 덧셈을 수행<br>");
+			var sum = 0;
+			for (var i = 0; i <= n; i++) {
+				sum += i;
+			}
+			return sum;
+		}
+		
+		/* 반환값이 있는 출력 */
+		result = add('홍길동', 100)
+		document.write("결과 : " + result + "</p>")
+		
+		/* 반환값이 없는 출력 */
+		document.write("결과 : " + add('우연희', 10) + "<p/>");
+		
+		/* 함수를 변수에 할당하여 출력 */
+		var calSum = add;
+		var addUp = add;
+		document.write("결과 : " + calSum('박지성', 10) + "<p/>");
+		document.write("결과 : " + addUp('박세리', 10) + "<p/>");
+		
+	</script>
+		
+		
+
+</body>
+</html>
+
+<!-- 기명함수 보다 무명함수가 우선순위다 -->

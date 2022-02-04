@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../style/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("button").click(function() {
+			$(".content").remove(".first, .second");
+		});
+	});
+</script>
+
+</head>
+<body>
+
+	<h1>.remove() 메소드</h1>
+	<div>
+		<div class="content first">첫번째 컨텐트</div>	<!-- 클래스안에서 뜨ㅣ어쓰기로 개별의 클래스로도 취급을 할 수 있음 -->
+		<div class="content second">두번째 컨텐트</div>
+		<div class="content third">세번째 컨텐트</div>
+	</div>
+
+	<button>상품 취소</button>
+
+</body>
+</html>

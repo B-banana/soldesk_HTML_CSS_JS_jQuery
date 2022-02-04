@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+div {
+	width: 100px;
+	height: 100px;
+	border: 1px dotted black;
+	background-color: skyblue;
+	margin: 50px;
+}
+
+div#box1 {
+	transform: skewX(50deg)
+}
+
+div#box2 {
+	transform: skewY(50deg)
+}
+
+div#box3 {
+	transform: skew(20deg, 10deg)
+}
+</style>
+</head>
+<body>
+	<div>기본 박스</div>
+	<div id="box1">박스 1</div>
+	<div id="box2">박스 2</div>
+	<div id="box3">박스 3</div>
+</body>
+</html>
+
+<!-- skewX() : 주어진 각도만큼 x축 방향으로 기울임(양수 -> 상단왼쪽, 하단 오른쪽) / (음수 -> 상단 오른쪽, 하단 왼쪽 -->
+<!-- skewY() : 주어진 각도만큼 y축 방향으로 기울임(양수 -> 우측은 아래로, 좌측은 위로) / (음수 -> 우측은 위로, 좌측은 아래로 -->

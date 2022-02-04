@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const data = [];
+		
+		for (let i = 0; i < 10; i++) {
+			data[i] = [String(i + "-" + 0), String(i + "-" + 1), String(i + "-" + 2)];
+		}
+
+		function printData() {
+			for (let x = 0; x < data.length; x++) {
+				for (let y = 0; y < data[x].length; y++) {
+					document.write(data[x][y] + " ");
+				}
+				document.write("<br/>");
+			}
+			document.write("<a href = '28_arr22.html'>돌아가기</a>");
+		}
+
+	</script>
+	
+	<button type="button" onclick="printData()">전체데이터 조회</button><p>
+	
+</body>
+</html>

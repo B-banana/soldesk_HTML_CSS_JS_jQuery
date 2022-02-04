@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Animation</title>
+<!-- 박사의 움직임이 5초동안 일정한 속도로 무한 반복하며 양방향으로 움직임 -->
+<style>
+div {
+	width: 100px;
+	height: 50px;
+	background: red;
+	position: relative;
+	animation: boxmove 5s infinite alternate;
+}
+
+#box1 {
+	animation-delay: 1s;
+	animation-timing-function: ease;
+}
+
+#box2 {
+	animation-delay: 2s;
+	animation-timing-function: linear;
+}
+
+#box3 {
+	animation-delay: 3s;
+	animation-timing-function: ease-out;
+}
+
+@keyframes boxmove {
+	from {left: 0px;
+}
+
+to {
+	left: 300px;
+}
+}
+
+div:hover {
+	animation-play-state: paused;
+}
+
+</style>
+</head>
+<body>
+	<div id="box1">애니메이션 박스 1</div>
+	<div id="box2">애니메이션 박스 2</div>
+	<div id="box3">애니메이션 박스 3</div>
+	<strong>Animation</strong>
+</body>
+</html>

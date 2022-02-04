@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Month & Week Input</title>
+</head>
+<body>
+	<form>
+		<h3>생일(년/월)</h3>
+		생일 : <input type="month" name="birth" />
+		<h3>주간 계획(년/주) 입력</h3>
+		주간계획 : <input type="week" name="weekeend" /> 
+		<p></p>
+
+		<input type="submit" value="확인" /> 
+		<input type="reset" value="다시 작성" />
+	</form>
+	
+	<label for="week">Choose a week in May or June</label>
+	<input type="week" name="w" min="2022-W01" max="2022-W32" required/>	<!-- W01 : 첫째주, 대소문자 가림 -->
+	
+</body>
+</html>

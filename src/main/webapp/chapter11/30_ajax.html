@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../style/jquery-3.6.0.min.js"></script>
+<script>
+$(function(){
+	//form action(=url), type(=method)
+	$.ajax({
+		url: '31_list_ajax.jsp',
+		type: 'GET',
+		datatype: 'html',
+		success: function(data) {
+			console.log(data);
+			$("table").html(data);
+		}
+	})
+})
+
+
+
+</script>
+<style>
+table {
+	background-color: yellow;
+}
+</style>
+</head>
+<body>
+<form id="form">
+<input type="text" name="content"/>
+<input type="button" name="submitButton" value="전송"/>
+</form>
+<table width="100px" border="1">
+</table>
+
+
+</body>
+</html>

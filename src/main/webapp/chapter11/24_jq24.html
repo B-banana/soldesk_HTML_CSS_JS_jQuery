@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../style/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("button").click(function() {
+			$("#item").clone().appendTo("#list");
+		});
+	});
+</script>
+
+</head>
+<body>
+
+	<h1>.clone() 메소드</h1>
+	<ul id="list">
+		<li id="item">상의</li>
+		<li>하의</li>
+		<li>아우터</li>
+	</ul>
+	<button>상품추가</button>
+<!-- 	<button id="secondBtn">하의 상품추가</button>
+	<button id="thirdBtn">아우터 상품추가</button> -->
+
+</body>
+</html>

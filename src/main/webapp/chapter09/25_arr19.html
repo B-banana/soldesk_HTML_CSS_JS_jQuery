@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const data = [10, 20, 30, 40, 30, 60, 70, 30, 90, 100];
+
+		document.write("배열 데이터 [" + data + "] : " + "<br/>");
+		document.write("처음부터 검색한 30의 인덱스 : " + data.indexOf(30) + "<br/>");
+		document.write("마지막에서부터 검색한 30의 인덱스 : " + data.lastIndexOf(30) + "<br/>");
+		document.write("세번째부터 검색한 30의 인덱스 : " + data.indexOf(30, 3) + "<br/>");	/* 세번째 이후에서 첫번째 30의 위치 */
+		document.write("세번째부터 검색한 300의 인덱스 : " + data.indexOf(300) + "<br/>");	/* 없으면 -1을 반환 */
+
+	</script>
+</body>
+</html>

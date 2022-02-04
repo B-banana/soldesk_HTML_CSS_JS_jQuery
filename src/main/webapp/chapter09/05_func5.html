@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function add() {
+			var sum = 1;
+			return sum;
+		}
+
+		function add(x) {
+			var sum = x + 1;
+			return sum;
+		}
+
+		function add(x, y) {
+			var sum = x + y;
+			return sum;
+		}
+
+		function add(x, y, z) {
+			var sum = x + y + z;
+			return sum;
+		}
+		
+		var r0 = add();
+		var r1 = add(1);
+		var r2 = add(2, 3);
+		var r3 = add(4, 5, 6);
+		var r4 = add(7, 8, 9, 10);
+		
+		document.write("함수 호출 인자값 없음 : " + r0 + "<p/>");
+		document.write("함수 호출 인자값 부족 : " + r1 + "<p/>");
+		document.write("함수 호출 인자값 부족 : " + r2 + "<p/>");
+		document.write("함수 호출 정상 호출 : " + r3 + "<p/>");
+		document.write("7, 8, 9만으로 인자값 실행 : " + r4 + "<p/>");
+		
+		// 결론 : 오버로딩은 안됨. 가장 매개변수가 많은거만 작동함.
+		// 넘치는건 해당 자리까지만 하고, 뒤에는 버림
+		
+	</script>
+
+</body>
+</html>

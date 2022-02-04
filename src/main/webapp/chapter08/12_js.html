@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+var x=5;
+var y="5";
+var result;
+result = (x>y);
+document.write("x > y : " + result +"<br>");
+document.write("x == y : " + (x == y) +"<br>");
+document.write("x === y : " + (x === y) +"<br>");	//타입비교
+document.write("x != y : " + (x != y) +"<br>");
+document.write("x !== y : " + (x !== y) +"<br>");
+
+// 0101 = 5
+// 0111 = 7
+var z=7;
+var res;
+document.write("x < 10 && z > 10 : " + (x < 10 && z > 10) +"<br>");
+document.write("x < 10 || z > 10 : " + (x < 10 || z > 10) +"<br>");
+document.write("!(x < 10 && z > 10) : " + (!(x < 10 && z > 10)) +"<br>");
+
+var a=5; //0101
+var b=7; //0111
+
+result2 = (a&b);	//비트 곱
+document.write("(a & b) : " + result2 +"<br>");
+result2 = (a|b);	//비트 합
+document.write("(a | b) : " + result2 +"<br>");
+result2 = (a^b);	//베타적 논리합
+document.write("(a ^ b) : " + result2 +"<br>");
+
+document.write(x +","+ y+"<br>");
+result3 = (x>y)? x:y;
+document.write("(x>y)? : " + result3 +"<br>");
+result3 = (x>y)? x-y:y-x;
+document.write("(x>y)? : " + result3 +"<br>");
+
+
+</script>
+</body>
+</html>

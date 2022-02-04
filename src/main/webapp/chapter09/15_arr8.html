@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var arrdata = [];
+
+		function insertArr() {
+			var i;
+			for (i = 0; i <= 99; i++) {
+				arrdata[i] = i + 1; //1~100까지의 데이터의 생성
+				document.write(arrdata[i] + " "); // 출력
+			}
+			document.write("===============================<p/>")
+		}
+		
+		function delArr() {
+			var i;
+			for (i = 0; i < arrdata.length; i++) {
+				if (i%2 == 0){
+					arrdata[i] = 0;
+				} else {
+					continue;
+				}
+			}
+			selectArr();
+		}
+
+		function selectArr() {
+			var i;
+			for (i = 0; i < arrdata.length; i++) { //데이터 조회
+				document.write(arrdata[i] + " "); // 출력
+			}
+			document.write("<p>홀수 번째 데이터 초기화 완료" + "<br>");
+			document.write("<a href = '15_arr8.html'>돌아가기</a>");
+
+		}
+		
+		insertArr();
+
+	</script>
+	
+	<button type="button" onclick="delArr()">데이터 홀수 번째 데이터 초기화</button>
+	
+</body>
+</html>

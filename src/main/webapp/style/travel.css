@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+table, th, td {
+	border: 1px solid black;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+h1 {
+	font-size: 18px;
+	font-weight: 900;
+	color: rgb(48,48,48);
+	line-height: 30px;
+	
+}
+
+th {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	color: #3333b0;
+}
+
+a, a:visited {
+	color: rgb(80, 176, 176);
+	text-decoration: none;
+	font-weight: 800;
+	
+}
+
+img {
+	width: 400px;
+	height: auto;
+}
+

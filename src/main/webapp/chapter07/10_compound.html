@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+div {
+	width: 100px;
+	height: 100px;
+	border: 1px dotted black;
+	background-color: skyblue;
+	margin: 50px;
+}
+
+div#box1 {
+	transform: rotate(45deg) scale(1.5) skew(30deg) translate(50px);
+}
+
+div#box2 {
+	transform: translate(200px) rotate(-90deg) scale(2); /* 같이 쓸때 어느것을 먼저 적용할지 생각해서 사용 특히 translate, rotate */
+}
+</style>
+
+
+</head>
+<body>
+	<div>기본 박스</div>
+	<div id="box1">박스 1</div>
+	<div id="box2">박스 2</div>
+</body>
+</html>

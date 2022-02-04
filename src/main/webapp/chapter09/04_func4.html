@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 기명함수 선언
+		function printMsg(msg) {
+			document.write("기명함수 호출 메세지 : " + msg + "<br/>");
+		}
+		
+		// 무명함수 선언
+		var printMsg = function(msg) { // 함수를 객체로 선언
+			document.write("무명함수 호출 메세지 : " + msg + "<br/>");
+		}
+
+		printMsg("우선순위 함수 호출"); // 결론 : 무명함수가 먼저 호출 (순서 상관 없이)
+	</script>
+
+</body>
+</html>
+
+<!-- 기명함수 보다 무명함수가 우선순위다 -->

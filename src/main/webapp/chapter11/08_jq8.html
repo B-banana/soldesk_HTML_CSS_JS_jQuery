@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../style/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	/* $(document).ready(function() {
+
+		$("div.out").on("click", function() {
+			$("div.out").css("background-color", "red");
+		});
+		
+	}); */
+	
+	let n = 0;
+	
+	$(document).ready(function() {
+		$("div.out").mouseenter(function() {
+			$("p:first", this).text("마우스 포인트 들어옴");
+			$("p:last", this).text(++n);
+		});
+		
+		$("div.out").mouseleave(function() {
+			$("p:first", this).text("마우스 포인트 나감");
+			$("p:last", this).text("최종 횟수 : " + n);
+		});
+		
+		//마우스를 down하면 p:first 사라지고 p:last 메시지 없으므로 바뀜
+		$("div.out").mousedown(function() {
+			$("p:first", this).hide();
+			$("p:last", this).text("메세지 없음");
+		});
+		
+		//마우스를 up하면 p:first 보여지고 p:last 최종횟수를 다시 보여줌
+		$("div.out").mouseup(function() {
+			$("p:first", this).show();
+			$("p:last", this).text("최종 횟수 : " + n);
+		});
+		
+	});
+	
+</script>
+
+<style>
+div.out {
+	width: 200px;
+	height: 100px;
+	border: 1px solid #000;
+	text-align: center;
+	background-color: yellow;
+}
+</style>
+
+</head>
+<body>
+
+	<div class="out">
+		<p>마우스 이벤트 구현</p>
+		<p>0</p>
+	</div>
+
+</body>
+</html>

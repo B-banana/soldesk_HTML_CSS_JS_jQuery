@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../style/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("button").on("click", function() {
+			$("p").css({"font-size": "200%", "background-color": "yellow"});
+			$("p:first-child").css({"font-size": "200%", "background-color": "red"});
+		});
+	});
+</script>
+</head>
+<body>
+	<p>이태한</p>
+	<div>010-007-0070</div>
+	<p>김승이</p>
+	<div>010-123-4567</div>
+	<p>윤성원</p>
+	<div>010-456-4586</div>
+
+	<button type="button">이름 강조</button>
+</body>
+</html>

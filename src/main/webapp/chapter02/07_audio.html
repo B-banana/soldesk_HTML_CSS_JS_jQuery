@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Audio Tag</title>
+</head>
+<body>
+	<h3>오디오 자동 재생</h3>
+	<audio src="eagle.mp3" controls loop autoplay></audio>
+	<h3>오디오 수동 재생</h3>
+	<audio src="bear.mp3" controls muted></audio>
+	<h3>오디오 다중 재생</h3>
+	<audio controls>
+		<source src="chicken.mp3" type="audio/mpeg"><!-- 익스플로러, 크롬, 파이어폭스, 사파리 모두 가능 -->
+		<source src="chicken.ogg" type="audio/ogg"><!-- 크롬, 파이어폭스 가능 -->
+		<source src="chicken.wav" type="audio/wav"><!-- 크롬, 파이어폭스 가능 -->
+		오디오 파일을 재생 할 수 없습니다.<!-- 재생이 불가능 할 때, 위어서부터 순차적으로 실행 -->
+	</audio>
+	
+<!-- ⚫ <audio> 태그 속성
+- src : 재생할 오디오 파일이 저장된 경로 표시
+- controls : 재생 제어기 표시
+- loop : 반복 재생
+- autoplay : 웹 문서가 열림과 동시에 자동으로 재생
+- muted : 음소거 상태로 시작
+- preload : 오디오 파일 사용 여부와 상관없이 미리 다운로드함  -->
+	
+</body>
+</html>

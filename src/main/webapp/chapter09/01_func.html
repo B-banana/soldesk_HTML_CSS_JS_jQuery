@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+
+/* 함수 선언 전후 호출이 가능한 코드. 즉 함수에 이름이 있음
+ var text1 = "함수 선언 전 호출";
+var text2 = "함수 선언 후 호출";
+
+printMsg(text1);
+
+function printMsg(msg){
+	document.write("함수 호출 메세지 : " + msg + "<br/>");
+}
+
+printMsg(text2); */
+
+// 함수 선언 후 호출만 실행이 가능(무명의 함수에서는 전에 호출시 에러)
+var text1 = "함수 선언 전 호출";
+var text2 = "함수 선언 후 호출";
+
+// printMsg(text1); //에러
+
+var printMsg = function (msg) { // 함수를 객체로 선언
+	document.write("함수 호출 메세지 : " + msg + "<br/>");
+}
+
+printMsg(text2);
+
+</script>
+</body>
+</html>

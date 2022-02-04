@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p id="carName"></p>
+	<p id="carColor"></p>
+	<p id="carSpeed"></p>
+
+	<script type="text/javascript">
+		const car = {
+			name : 'Sonata',
+			speed : 100,
+			color : 'white',
+			start : function() {
+				return this.speed + 10;
+			}
+		};
+		
+		const cname = document.getElementById("carName");	//웹문서 안에서 아이디를 찾아서 변수방에 부여
+		cname.textContent = car.name;	//출력
+		const colname = document.getElementById("carColor");
+		colname.textContent = car.color;
+		const cspeed = document.getElementById("carSpeed");
+		cspeed.textContent = car.start();
+		
+	</script>
+
+</body>
+</html>
+
+<!-- textContent : 웹문서 안에서 아이디를 찾아서 변수방에 부여하고 변수의 내용을 출력까지 해줌 -->

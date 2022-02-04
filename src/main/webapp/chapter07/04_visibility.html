@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Visibility</title>
+<style>
+/* 공간은 존재하고 데이터만 사라짐 */
+.v1 {
+	visibility: hidden;
+	border: 1px dotted red;
+}
+
+.v2 {
+	visibility: visible;
+	border: 1px dotted red;
+}
+
+/* 공간까지 삭제 */
+.v3 {
+	display: none;
+	border: 1px dotted red;
+}
+</style>
+
+
+</head>
+<body>
+	<!-- 숨김 -->
+	<div class="v1">
+		<img src="pic1.jpg" />
+	</div>
+
+	<!-- 보임 -->
+	<div class="v2">
+		<img src="pic1.jpg" />
+	</div>
+
+	<!-- 공간까지 삭제 -->
+	<div class="v3">
+		<img src="pic1.jpg" />
+	</div>
+
+	<!-- 보임 -->
+	<div class="v2">
+		<img src="pic1.jpg" />
+	</div>
+
+</body>
+</html>
